@@ -25,7 +25,7 @@ bibleForm.addEventListener("submit", (e) => {
 });
 
 //----------------------------------------------------------------
-
+const esvKey = "f1f4388d24337a5f52857049d8acb0e9e1e0eb0d";
 //get passage
 function getESV(passage) {
   let url = "https://api.esv.org/v3/passage/html/?q=";
@@ -33,7 +33,7 @@ function getESV(passage) {
   fetch(url, {
     method: "GET",
     headers: {
-      Authorization: esvkey,
+      Authorization: esvKey,
     },
   })
     .then((res) => res.json())
