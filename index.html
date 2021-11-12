@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="An easy-to-use app to help Christians start their day.">
+    <meta name="keywords" content="bible, christian, task, bible, notes, prayer, first, light">
+    <title>First Light</title>
+    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <ul id="hamburger">
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <ul id="menu">
+        <li class="menu-li">
+          <button id="open-tasks" class="open">
+            <span class="btn-text">tasks</span>
+            <ul class="switchbox">
+              <li class="switch"></li>
+            </ul>
+          </button>
+        </li>
+        <li class="menu-li">
+          <button id="open-notes" class="open">
+            <span class="btn-text">notes</span>
+            <ul class="switchbox">
+              <li class="switch"></li>
+            </ul>
+          </button>
+        </li>
+        <li class="menu-li"">
+          <button id="open-prayer" class="open">
+            <span class="btn-text">prayer</span>
+            <ul class="switchbox">
+              <li class="switch"></li>
+            </ul>
+          </button>
+        </li>
+        <li class="menu-li">
+          <button id="open-bible" class="open">
+            <span class="btn-text">bible</span>
+            <ul class="switchbox">
+              <li class="switch"></li>
+            </ul>
+          </button>
+        </li>
+      </ul>
+    </header>
+    <!----------- end header --------->
+    <div id="wrapper">
+      <center><h1>Welcome to First Light.</h1></center>
+      <div id="verse-box" class="pad card">
+        <div id="over-verse">
+          <a id="verse-button">get another verse</a>
+          <span id="weather"></span>
+        </div>
+        <!-- <h2>Passage</h2> -->
+        <span id="verse"></span>
+
+        <span id="citation"></span>
+        <span class="read-chapter"></span>
+      </div>
+      <!-------------------->
+      
+      <!-------------------->
+      
+      <!-------------------->
+      <div id="content">
+        <div id="tasks-box" class="user_content pad card">
+        <h2>Tasks</h2>
+        <form action="index.html">
+          <label>
+            <span class="error" id="task-error"></span>
+            <input type="text" id="task-input" />
+            <button id="task-submit">+</button>
+          </label>
+        </form>
+        <ul id="task-list"></ul>
+      </div>
+        <div id="notes-box" class="user_content pad card">
+          <h2>Notes</h2>
+          <form action="index.html">
+            <label>
+              <span class="error" id="note-error"></span>
+              <input type="text" id="note-input" />
+              <button id="note-submit">+</button>
+            </label>
+          </form>
+          <ul id="note-list"></ul>
+        </div>
+        <!-------------------->
+        <div id="prayer-list-box" class="user_content pad card">
+          <h2>Prayer List</h2>
+          <form action="index.html">
+            <label>
+              <span class="error" id="prayer-error"></span>
+              <input type="text" id="prayer-input" />
+              <button id="prayer-submit">+</button>
+            </label>
+          </form>
+          <ul id="prayer-list"></ul>
+        </div>
+        <!-------------------->
+        <div id="bible-box" class="pad card">
+          <p>What would you like to read?</p>
+          <form action="index.html">
+            <label>
+              <span class="error" id="bible-error"></span>
+              <input type="text" id="bible-input" />
+              <button id="bible-submit">go</button>
+            </label>
+          </form>
+          <span id="top"></span>
+          <span class="bible-nav"></span>
+          <span id="bible-text"></span>
+          <span class="read-chapter"></span>
+          <span class="bible-nav"></span>
+        </div>
+      </div>
+      <!-------------------->
+    </div>
+    <footer>
+      <div>
+        <span>Scripture quotations are from the ESV® Bible (The Holy Bible, English Standard Version®), copyright © 2001 by Crossway, a publishing ministry of Good News Publishers. Used by permission. All rights reserved. You may not copy or download more than 500 consecutive verses of the ESV Bible or more than one half of any book of the ESV Bible.</span>
+        <span
+          >Weather SVG provided by
+          <a href="https://fontawesome.com/license">Font Awesome</a>.</span
+        >
+        <span
+          >First Light developed by
+          <a href="http://www.shawnkelley.art">Shawn Kelley</a>.<br />Copyright ©
+          2021 Shawn Kelley. All rights reserved.</span
+        >
+      </div>
+    </footer>
+    <!--end content-->
+    <script src="js/declar.js"></script>
+    <script type="module" src="js/weather.js"></script>
+    <script src="js/esv.js"></script>
+    <script src="js/nasb.js"></script>
+    <script type="module" src="js/verse.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/delete.js"></script>
+    <script src="js/edit.js"></script>
+    <script src="js/write.js"></script>
+    <script src="js/tasks.js"></script>
+    <script src="js/prayer.js"></script>
+    <script src="js/notes.js"></script>
+    <script src="js/load.js"></script>
+    <script src="js/bible.js"></script>
+
+  </body>
+</html>
