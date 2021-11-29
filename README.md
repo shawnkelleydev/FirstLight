@@ -5,3 +5,5 @@ It also integrates Crossway's ESV API for random verse presentation and ESV acce
 user data locally in the browser.
 
 First Light.  Find your way for the day.
+
+NOTE: Full Stack version with Node.js / Express / SQL coming soon.
