@@ -11,7 +11,7 @@ const esv = [
   },
   {
     passage: "john 1:11-13",
-    chapter: "john 3",
+    chapter: "john 1",
     speaker: "john",
   },
   {
